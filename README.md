@@ -1,3 +1,3 @@
 # JavaScript Form Validation
 
-validation.js built to help validate all form elements that you could come across.
+validation.js built to help validate all form elements that could be come across.
