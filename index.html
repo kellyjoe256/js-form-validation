@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            ul {
+                border: 1px solid #c00;
+                padding: 10px;
+                width: 400px;
+            }
+            li {
+                margin-left: 10px;
+            }
+            .error {
+                color: #c00;
+            }
+            .border-warning {
+                border: 1px solid #c00;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form method="post" action="" id="test-form" enctype="multipart/form-data" novalidate>
+                <p>
+                    <label><strong>Full Name</strong>&nbsp;
+                        <input type="text" name="fullname" id="fullname" value="" placeholder="Full Name" />
+                    </label>
+                </p>
+				<p>
+                    <label><strong>Date of Birth</strong>&nbsp;
+                        <input type="text" name="date_of_birth" id="date_of_birth" value="" placeholder="2016-12-31" />
+                    </label>
+                </p>
+                <p>
+                    <label><strong>Age</strong>&nbsp;
+                        <input type="text" name="age" id="age" value="" placeholder="25" />
+                    </label>
+                </p>
+                <p>
+                    <label><strong>Height</strong>&nbsp;
+                        <input type="text" name="height" id="height" value="" placeholder="6.5" />
+                    </label>
+                </p>
+                <p>
+                    <label><strong>Email</strong>&nbsp;
+                        <input type="text" name="email" id="email" value="" placeholder="test@example.com" />
+                    </label>
+                </p>
+                <p>
+                   <label><strong>Password</strong>&nbsp;
+                        <input type="password" name="password" id="password" value="" />
+                    </label> 
+                </p>
+                <p>
+                   <label><strong>Confirm Password</strong>&nbsp;
+                        <input type="password" name="rpt_password" id="rpt_password" value="" />
+                    </label> 
+                </p>
+                <p>
+                    <label><strong>Message</strong>&nbsp;
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <label><strong>Photo</strong>&nbsp;
+                        <input type="file" name="photo" id="photo" />
+                    </label>
+                </p>
+                <p>
+                    <strong>Gender</strong>&nbsp;
+                        <label>
+                            <input type="radio" name="gender" id="male" value="male" /> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="female" value="female" /> Female
+                        </label>
+                </p>
+                <p>
+                    <strong>Color</strong>&nbsp;
+                        <label>
+                            <input type="checkbox" name="color[]" id="red" value="red" /> Red
+                        </label>
+                        <label>
+                            <input type="checkbox" name="color[]" id="green" value="green" /> Green
+                        </label>
+                        <label>
+                            <input type="checkbox" name="color[]" id="blue" value="blue" /> Blue
+                        </label>
+                        <label>
+                            <input type="checkbox" name="color[]" id="white" value="white" /> White
+                        </label>
+                        <label>
+                            <input type="checkbox" name="color[]" id="black" value="black" /> Black
+                        </label>
+                </p>
+                <p>
+                    <label><strong>Country</strong>&nbsp;
+                        <select name="country" id="country">
+                            <option value="">Select Country</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="rwanda">Rwanda</option>
+                            <option value="burundi">Burundi</option>
+                            <option value="south_sudan">South Sudan</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Submit" />
+                </p>
+            </form>
+        </div>
+        <script type="text/javascript" src="functions.js"></script>
+        <script type="text/javascript" src="validation.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
